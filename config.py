@@ -14,7 +14,7 @@ MONGO_DB_URI = "mongodb+srv://devilkingp0404:devilkingp0404@cluster0.iw04afs.mon
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
 LOG_GROUP_ID = -1002222142844
 OWNER_ID = 7464102358
-START_STICKER_ID = "CAACAgUAAxkBAAEMh05mnxmdTdD_d3MX1bvpZMBduBCQqgACxQ8AAuPNQVVKfyLFzl_KDDUE"
+START_STICKER_ID = getenv("START_STICKER_ID", "CAACAgUAAxkBAAEMh05mnxmdTdD_d3MX1bvpZMBduBCQqgACxQ8AAuPNQVVKfyLFzl_KDDUE")
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
