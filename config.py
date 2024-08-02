@@ -9,10 +9,10 @@ load_dotenv()
 # Get this value from my.telegram.org/apps
 API_ID = 29350132
 API_HASH = "e854995be05edb5bf21f5b84bdc0212f"
-BOT_TOKEN = "7324085779:AAG4ug_0XtyhLizP41orziDOK1qpqgXFUw4"
+BOT_TOKEN = "7324085779:AAFl-_e8RBxPcqMbgIWjbOewp9qIOePB6oo"
 MONGO_DB_URI = "mongodb+srv://devilkingp0404:devilkingp0404@cluster0.iw04afs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
-LOG_GROUP_ID = -1002173045790
+LOG_GROUP_ID = -1002222142844
 OWNER_ID = 7464102358
 START_STICKER_ID = getenv("START_STICKER_ID", "CAACAgUAAxkBAAEMh05mnxmdTdD_d3MX1bvpZMBduBCQqgACxQ8AAuPNQVVKfyLFzl_KDDUE")
 ## Fill these variables if you're deploying on heroku.
@@ -53,7 +53,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 
 
 # Get your pyrogram v2 session from Replit
-STRING1 = "BQG_2PQAjWJwP99R6qAQJLy7VLO5-rrkTqEnPfVvRdPAtMg6G2l4R5utSaULBJ-Z19t2nuJFkML6UA-SyhFXp_dsBSX7jqtB1uJ7ZbjQzS1Q6KnaIRAoxRdRAedbPIg_2zZO71GcZ-ddXulnUNNQ6cGD3RKeaG7hLcurFNOuxaeowq27trVJ9reMmItYJbib7H2g2oMwzTskDJRGuu0b8u28FI9UNbfsRwsIgFctz7TgJWiP5GCYbjOB8il3xU5h1P_p-hFQp5OCJA0EFiia54qzKC4r6vJKpJz1uBfPq65q2pi_QLOOgvlp47K1tCa2G55c1_TA6Ch_67okFZKuiPecbxJc0wAAAAG85SnWAA"
+STRING1 = "BQG_2PQAe8wWePj7LzevRxd7DF-9KOyv8eY7mrRkinJ6g0aHm5Y8fdKvMm0Gaesu16WbplF-Lv_ec2ujmQ4PvCF0MopZp8-0pOIVa4ycFPNmpqrTSGNMoJz3Wnh1F4i_BhvVesd0k4sklF3TEx2EoNKHQ0l8jsDtwljJOxGNW3pfwqEm5zdQO0L7m6UndzTKS0hhUe7MYrrPFaT7AoZy-9uoYis5HfheyREjca4Fmv3_EaQ0rUUhTD7JFj0dgmBFUoifHJG7wadVP4AsyR1tvfd3dONHwauCGkO_hg9bpbSqxqfDsfDdWBCnDjPahcRQ-uAi_zLrvUeDxHMYtxmI2BXnkdnc3AAAAAG85SnWAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
