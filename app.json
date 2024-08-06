@@ -1,7 +1,7 @@
 {
     "name": "🌹⃝𖣔𝘼𝙢𝙧𝙞𝙩𝙖 ✘ 𝙈𝙎𝙉𝐂🥀⛦⃕‌🇮🇳",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/b27fe18ee6f27bbc4cfd0.jpg",
+    "logo": "https://graph.org/file/b5c5289821a2445fb5042.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -24,7 +24,7 @@
       },
       "BOT_TOKEN": {
         "description": "𝐆𝐄𝐓 𝐁𝐎𝐓 𝐓𝐎𝐊𝐄𝐍 𝐅𝐑𝐎𝐌 𝐁𝐎𝐓 𝐅𝐀𝐓𝐇𝐄𝐑",
-        "value": "7324085779:AAGt76PShYAXXtxIVBy51ZOXOY8wM0jr2FE",
+        "value": "7324085779:AAF5EKjh_rJLuyzfKXbla2jScoq05nQQZj4",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -54,7 +54,7 @@
       },
       "START_IMG_URL": {
         "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐑𝐓 𝐁𝐎𝐓 𝐈𝐌𝐀𝐆𝐄 𝐔𝐑𝐋, 𝐆𝐄𝐓 𝐈𝐓 𝐅𝐑𝐎𝐌 ;- t.me/vTelegraphBot",
-        "value": "https://graph.org/file/c3847da256457f7cb057d.jpg",
+        "value": "https://graph.org/file/b5c5289821a2445fb5042.jpg",
         "required": false
       },
       "LOGGER_ID": {
