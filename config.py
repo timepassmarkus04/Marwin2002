@@ -9,12 +9,12 @@ load_dotenv()
 # Get this value from my.telegram.org/apps
 API_ID = 29350132
 API_HASH = "e854995be05edb5bf21f5b84bdc0212f"
-BOT_TOKEN = "7324085779:AAFl-_e8RBxPcqMbgIWjbOewp9qIOePB6oo"
+BOT_TOKEN = "7324085779:AAF5EKjh_rJLuyzfKXbla2jScoq05nQQZj4"
 MONGO_DB_URI = "mongodb+srv://devilkingp0404:devilkingp0404@cluster0.iw04afs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
 LOG_GROUP_ID = -1002222142844
-OWNER_ID = 7464102358
-START_STICKER_ID = getenv("START_STICKER_ID", "CAACAgUAAxkBAAEMh05mnxmdTdD_d3MX1bvpZMBduBCQqgACxQ8AAuPNQVVKfyLFzl_KDDUE")
+OWNER_ID = 7245959664
+
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -53,7 +53,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 
 
 # Get your pyrogram v2 session from Replit
-STRING1 = "BQG_2PQAe8wWePj7LzevRxd7DF-9KOyv8eY7mrRkinJ6g0aHm5Y8fdKvMm0Gaesu16WbplF-Lv_ec2ujmQ4PvCF0MopZp8-0pOIVa4ycFPNmpqrTSGNMoJz3Wnh1F4i_BhvVesd0k4sklF3TEx2EoNKHQ0l8jsDtwljJOxGNW3pfwqEm5zdQO0L7m6UndzTKS0hhUe7MYrrPFaT7AoZy-9uoYis5HfheyREjca4Fmv3_EaQ0rUUhTD7JFj0dgmBFUoifHJG7wadVP4AsyR1tvfd3dONHwauCGkO_hg9bpbSqxqfDsfDdWBCnDjPahcRQ-uAi_zLrvUeDxHMYtxmI2BXnkdnc3AAAAAG85SnWAA"
+STRING1 = "BQG_2PQAStIETpzT9i1ELcS8hFwMXd99-qtMxgdeNafIh82fMT_MMMoaLGKvaI7vPn4NVaEX8CVUl1a3LhatZ7-EMNEFAVPHP7Rk-wVwZ2rd0wnyc39Eq0ufUf4Bew3Cl7KprUcsBePYwZGAbldfnVq_puWkyI8Pga37I1vK8I46ZgENwlFxvu9IXnsdOBQC3TI33Mw1U00BDZe04WDrRVZjhctUBocqbOEbWQj5ZsLUSQEL8EuY2-_nJQC6BL-136B4XiLE1BVKRZfAJfOQJnSJzFRNKOOySDjptAjr2zPwckqjP1pROUDyGtJaVXQiC7zJQTHJcsQXounNO4zDpAdWVflVEgAAAAG85SnWAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -69,10 +69,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/c3847da256457f7cb057d.jpg"
+    "START_IMG_URL", "https://graph.org/file/b5c5289821a2445fb5042.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/c3847da256457f7cb057d.jpg"
+    "PING_IMG_URL", "https://graph.org/file/b5c5289821a2445fb5042.jpg"
 )
 PLAYLIST_IMG_URL = "https://graph.org//file/3dfcffd0c218ead96b102.png"
 STATS_IMG_URL = "https://graph.org//file/99a8a9c13bb01f9ac7d98.png"
