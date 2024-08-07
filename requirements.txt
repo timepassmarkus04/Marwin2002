@@ -1,4 +1,3 @@
-pyrogram.enums
 aiofiles
 aiohttp
 asyncio
