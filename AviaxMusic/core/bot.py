@@ -1,19 +1,5 @@
-async def main():
-    try:
-        # Attempt to send a message to the log channel
-        await client.send_message(log_channel_id, "Bot has started!")
-        LOGGER.info("Bot successfully accessed the log channel.")
-    except (errors.ChannelInvalid, errors.PeerIdInvalid):
-        LOGGER.error("Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel.")
-
-# Run the bot
-import client:
-    client.loop.run_until_complete(main())
-
-
-
 from pyrogram import Client, errors
-from pyrogram.enums import ChatMemberStatus
+from pyrogram.enums import ChatMemberStatus, ParseMode
 
 import config
 
@@ -29,6 +15,7 @@ class Aviax(Client):
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
             in_memory=True,
+            parse_mode=ParseMode.HTML,
             max_concurrent_transmissions=7,
         )
 
@@ -41,26 +28,28 @@ class Aviax(Client):
 
         try:
             await self.send_message(
-                chat_id=config.LOGGER_ID,
+                chat_id=config.LOG_GROUP_ID,
                 text=f"<u><b>» {self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :</b><u>\n\nɪᴅ : <code>{self.id}</code>\nɴᴀᴍᴇ : {self.name}\nᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
                 "Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel."
             )
-
+            exit()
         except Exception as ex:
             LOGGER(__name__).error(
                 f"Bot has failed to access the log group/channel.\n  Reason : {type(ex).__name__}."
             )
+            exit()
 
-        a = await self.get_chat_member(config.LOGGER_ID, self.id)
+        a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
             LOGGER(__name__).error(
                 "Please promote your bot as an admin in your log group/channel."
             )
-
+            exit()
         LOGGER(__name__).info(f"Music Bot Started as {self.name}")
 
     async def stop(self):
         await super().stop()
+        
