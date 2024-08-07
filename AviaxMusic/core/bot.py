@@ -7,7 +7,7 @@ async def main():
         LOGGER.error("Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel.")
 
 # Run the bot
-with client:
+import client:
     client.loop.run_until_complete(main())
 
 
