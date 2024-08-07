@@ -1,3 +1,32 @@
+import logging
+from telethon import TelegramClient, errors
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+LOGGER = logging.getLogger(__name__)
+
+# Initialize the bot client
+api_id = '29350132'
+api_hash = 'e854995be05edb5bf21f5b84bdc0212f'
+bot_token = '7324085779:AAF5EKjh_rJLuyzfKXbla2jScoq05nQQZj4'
+log_channel_id = '-1002222142844'  # Make sure this is correct
+
+client = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
+
+async def main():
+    try:
+        # Attempt to send a message to the log channel
+        await client.send_message(log_channel_id, "Bot has started!")
+        LOGGER.info("Bot successfully accessed the log channel.")
+    except (errors.ChannelInvalid, errors.PeerIdInvalid):
+        LOGGER.error("Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel.")
+
+# Run the bot
+with client:
+    client.loop.run_until_complete(main())
+
+
+
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus
 
