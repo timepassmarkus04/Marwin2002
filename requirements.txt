@@ -1,3 +1,4 @@
+Yt-dlp
 aiofiles
 aiohttp
 asyncio
