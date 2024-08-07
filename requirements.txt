@@ -1,4 +1,4 @@
-yt-dlp==2024.08.06
+git+https://github.com/Badmunda98/yt-dp-fork
 aiofiles
 aiohttp
 asyncio
