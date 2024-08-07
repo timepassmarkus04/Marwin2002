@@ -1,5 +1,3 @@
-import pyrogram
-pyrogram.utils.MIN_CHANNEL_ID = -1002222142844
 import asyncio
 import os
 from datetime import datetime, timedelta
